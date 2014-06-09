@@ -1,56 +1,88 @@
 \chapter{Introdução}
 
-Atualmente as tecnologias da informação exercem cada vez mais influência na sociedade, seja na interação entre pessoas, ou nas relações que empresas possuem com o mercado. Nesse sentido, sistemas de software tem recebido mais atenção, dado que cada vez mais podem determinar o sucesso ou fracasso nessas relações.
+A argumentação possui um papel essencial na sociedade. Diariamente diversas pessoas participam de discussões, negociações, deliberações e várias outras atividades colaborativas em que o ato de argumentar é constante. A argumentação possibilita às pessoas ferramentas para que elas possam defender seus interesses e crenças.  De acordo com \cite{schneider2013Argumentation}, a argumentação simboliza o estudo das opiniões e pontos de vistas expressos por humanos com o intuito de gerar conclusões através de raciocínio lógico.
+%
 
-%Monopólio dos software proprietários e início dos softwares livre
-Por volta da década de 60 o software era comercializado juntamente com hardware. O código-fonte era disponibilizado junto com o software e muitos usuários compartilhavam código e informações. O software era dito livre até a década de 70, quando a IBM\footnote{Internacional Business Machines é uma empresa americana da área de tecnologia da informação. Comercializa hardware e software além de serviços de hospedagem e infra-estrutura.} decidiu comercializar seus programas separados do hardware. Com isso as restrições de acesso ao código-fonte se tornaram comuns, assim seu compartilhamento se tornava cada vez mais escasso, surgiram assim os softwares proprietários.
-%TODO: faltou uma referência para sustentar este parágrafo. Ver isso para o TCC 2.
+Segundo \cite{eemeren1996argumentation}, a argumentação pode ser vista como uma atividade verbal, social e causal.  É verbal devido a necessidade de representação dos argumentos em uma linguagem ordinária, seja ela oral ou escrita. Meios não verbais como gestos e expressões faciais são válidos, porém não substituem as expressões verbais; É social devido a participação de diversos interlocutores expressando suas ideias, considerando os pontos de vistas alheios e tomando decisões com base nessas informações; É racional, pois o argumento apresentado por um interlocutor possui uma percepção coerente com base na posição defendida.
+%
 
-Durante a década de 80, porém, o contexto de software livre que permeava o início do software ressurgiu, em suma, por iniciativa Richard Stallman. Em 1983, após uma experiência negativa com softwares proprietários, ele deu origem ao Projeto GNU\footnote{Projeto que tem como objetivo a criação de um sistema operacional livre}. Stalman objetivava criar um mecanismo para garantir direitos de cópia, modificação e redistribuição de software. Com isso surgiu a Licença GPL\footnote{General Public Lincense ou Licensa Pública Geral}.
-%TODO: faltou uma referência para sustentar este parágrafo. Ver isso para o TCC 2.
+Devido a aplicação em diversos contextos, a argumentação não é restrita a apenas uma disciplina.  A prática da argumentação está presente e é objeto de estudo em várias áreas, tais como a inteligência artificial, engenharia de requisitos, tomada de decisões, psicologia, lingüística, filosofia, teoria legal e lógica \cite{charwat2013abstractargumentation}.
+%
 
-A definição de software é a mesma, seja ele proprietário ou livre. Softwares são constituídos por um conjunto de procedimentos, dados, possível documentação, e satisfazem necessidades específicas de determinados usuários. Além da definição, os dois tipo de software mencionados aqui possuem também a necessidade de serem mantidos e evoluídos.
-%TODO: Falou de definição sem referenciar - corrigir no TCC 2.
-% Trocar proprietário por restrito (colocar nota de rodapé falando que restrito, privativo ou proprietário são os termos mais usados)
+Nos últimos 50 anos a argumentação vem sendo aprimorada. Diversos modelos de argumentação foram propostos. O modelo de Toulmin \cite{toulmin1958uses}, proveniente da filosofia, representa um marco na história da argumentação. Este modelo permitiu a ruptura  do paradigma formal de argumentação, sugerindo uma maneira flexível de argumentar a partir de conceitos informais. Este modelo é utilizado em diversas situações, tais como conversas informais, deliberações legais e debates científicos. O modelo de Toulmin tem como meta a representação e análise dos elementos potenciais que constituem qualquer tipo de argumentação, de modo que seja possível gerar uma estrutura menos ambígua \cite{toulmin1958uses}. Os elementos que fazem parte deste modelo são os dados, conclusões, justificativas, garantias, modalidades, suportes e refutações.
+%
 
-A evolução de software começou a receber mais atenção a partir dos estudos realizados por Meir M. Lehman no final da década de 60, assim se tornou uma área de conhecimento da engenharia de software. A partir de seus estudos Lehman elaborou um conjunto de oito leis que são conhecidas "Leis de Lehman", as quais definem um padrão para evolução de softwares.
-%TODO: referenciar Lehman
+Após o modelo Toulmin, outra contribuição importante para a argumentação ocorreu em 1970. Neste ano foi publicado o IBIS\footnote{Issue-Based Information System ou Sistemas de Informação Baseados em Questões}. O IBIS é um esquema de argumentação criado para coordenar e planejar o processo de tomada de decisões \cite{Kunz1970issuesas}. Ele foi originalmente criado como um sistema de documentação destinado a organização da informação e a subseqüente consulta para facilitar a compreensão das decisões que foram tomadas \cite{schneider2013Argumentation}. No esquema IBIS a argumentação é estruturada por meio de questões, em que o problema é apresentado, posições, onde são propostas as alternativas para a resolução dos problemas, e argumentos, que qualificam uma ou mais posições. 
+%
 
-A evolução de software é importante para manter o software consistente com seu ambiente, competitivo em relação a sotwares concorrentes e manter os usuários interessados. Além disso, quando tratamos de software livre a evolução é essencial para manter a comunidade estabelecida ao seu redor, contribuindo para manter esse projeto ativo.
-%TODO: referenciar a mim ou a Terceiro. 
+Os avanços computacionais permitiram que diversas ferramentas fossem desenvolvidas com base nos modelos de argumentação citados acima. No mercado existem diversas soluções que seguem alguns princípios do modelo de Toulmin: Araucaria \cite{reed2004araucaria}, Rationale, Debatabase, entre outros. O IBIS também possui algumas opções no mercado tais como a Compendium e a QuestMap.
+%
 
-Um dos desafios inerentes ao desenvolvimento de software é a manutenção e aumento da qualidade do sistema desenvolvido. Muitos indícios da qualidade de um software são encontrados no seu código-fonte através de suas métricas.
-%TODO: referenciar a mim
-Porém, extrair métricas de código-fonte manualmente não é uma tarefa considerada pelas equipes de desenvolvimento dado o esforço necessário para tal. Para isso existem ferramentas que auxiliam as equipes de desenvolvimento. Entre essas ferramentas está a plataforma Mezuro, utilizada para o monitoramento de códigos-fonte.
-%TODO: referenciar artigos sobre Mezuro e Kalibro.
+As soluções baseadas no modelo de Toulmin apenas permitem a diagramação e visualização dos argumentos. A lógica racional para determinar a aceitabilidade de um argumento partia da subjetividade dos participantes da discussão. Quando os elementos da argumentação aumentam, a percepção de aceitabilidade de determinado argumento fica complexa \cite{toulmin1958uses}. Já as soluções baseadas no IBIS oferecem suporte ao processo de tomada de decisões. Porém, assim como o modelo de Toulmin, o IBIS não define um critério de aceitabilidade para verificar a validade de seus elementos. Esta percepção fica a critério dos participantes da discussão.
+%
 
-O Mezuro é desenvolvido como um projeto de software livre, que a princípio era um plugin de uma plataforma de desenvolvimento de redes sociais denominada Noosfero.
-%TODO: nota de rodapé com a URL do Noosfero.
-Porém, o Mezuro cresceu em tamanho e complexidade. Por isso, a equipe de desenvolvimento do Mezuro decidiu pela reescrita de seu código, transformando-o em uma plataforma independente fora do Noosfero, visando mantê-la consitente com seu ambiente e com seus propósitos, competivivo em relação às ferramentas semelhantes e ampliar o interesse de utilização por parte de usuários.
+Na ciência da computação, existe a preocupação para identificar critérios formais para determinar a aceitabilidade dos argumentos \cite{rahwan2008MAS}. Uma das principais propostas, proveniente da inteligência artificial, foi o framework de argumentação abstrata proposto por Dung \cite{dung1995321}. O framework é composto por entidades abstratas (argumentos) e relações binárias de ataque ou derrota entre eles. O uso destes elementos irá gerar um grafo caracteriza os conflitos entre os argumentos. A aceitabilidade deste framework é obtida através de conjuntos compostos por argumentos que não se atacam e/ou se defendem. Esse tipo de aceitabilidade é conhecida como \textit{aceitabilidade conjunta}.
+%
+
+\citeonline{jureta2009AMA} desenvolveram o ACE\footnote{Acceptability Evaluation framework ou framework de avaliação da aceitabilidade} que também oferece critérios para a identificação e avaliação da aceitabilidade dos argumentos no contexto da engenharia de requisitos. Este framework é composto por uma linguagem para representar as informações relevantes de uma discussão e algoritmos para recuperar argumentos relevantes e avaliar sua aceitabilidade. A discussão é representada através de um grafo.  A informação é representada como proposições, outros elementos como conflitos, regras de inferência e preferências aumentam a semântica do modelo. O esquema de aceitabilidade do ACE é baseado em rotular cada elemento da argumentação individualmente. Esse tipo de aceitabilidade é conhecido como \textit{aceitabilidade individual}, cada argumento é rotulado com base nos elementos conectados com o mesmo.
+%
+
+Diversas ferramentas foram implementadas utilizando o framework de Dung. Uma das principais é a ArguLab \cite{podlaszewski2011IBA}, que permite a construção de um grafo de argumentos e oferece a avaliação do grafo resultante utilizando as relações semânticas presentes no modelo de Dung. Apesar de ter automatizado a aceitabilidade dos argumentos a ferramenta é complexa e apenas usuários com conhecimentos avançados em argumentação são capazes de utilizá-la. Ferramentas baseadas no ACE não foram encontradas. 
+
+\section{Problemas}
+
+A internet encoraja a colaboração e a socialização e tem facilitado a propagação da informação, superando barreiras geográficas. A internet permite várias formas de comunicação, mas uma característica importante que todas essas formas tem em comum é a necessidade de um sistema que ofereça apoio, análise e suporte eficiente para auxiliar as atividades colaborativas \cite{daniil2012AFA}.
+
+Várias tecnologias oferecem suporte a argumentação, como listas de e-mail, sistemas de auxílio à tomada de decisões, sistemas de negociações, entre outras. Entretanto, várias destas tecnologias citadas não funcionam bem na prática \cite{moor2006AST}. O problema é que o conhecimento gerado por essas tecnologias dificilmente é utilizado para inferir conclusões lógicas através de processamento computacional. Com base no estudo realizado, observou-se que o motivo deste problema é a falta de adoção de modelos formais. Na maioria das vezes utiliza-se apenas texto para representar a argumentação. A semântica necessária para a realização de inferências é difícil de ser estruturada.
+
+Para permitir a análise computacional, diversos frameworks de argumentação são representados através de grafos \cite{dung1995321} \cite{jureta2009AMA}. Apesar de ser a escolha racional, diversos usuários sem conhecimento de lógica possuem dificuldade de entender e raciocinar acerca dos modelos gerados. Outro aspecto que deve ser considerado é a dificuldade no desenvolvimento de sistemas baseados em grafos. Os algoritmos associados bem como a interface gráfica para abstrair a complexidade para o usuário requer cuidados especiais. 
+
+Através das pesquisas realizadas é possível visualizar lacunas nas ferramentas de argumentação investigadas. Várias delas não oferecem suporte amplo ao processo de argumentação (diagramação, visualização e avaliação) e quando oferecem, a usabilidade da ferramenta deixa a desejar \cite{gonzalez2010usability}.
 
 \section{Objetivos}
 
+Para obter êxito neste trabalho de conclusão de curso, os seguintes objetivos gerais e específicos foram definidos.
+
 \subsection{Objetivos Gerais}
 
-Neste trabalho de conclusão de curso, há como principal objetivo colaborar com evolução da plataforma de monitoramento de código-fonte Mezuro, de forma que migre do cenário de ser um plugin para torna-se uma aplicação independente.
+\begin{enumerate}
+\item Desenvolver uma ferramenta web colaborativa que ofereça suporte completo ao processo de argumentação. Essa ferramenta deve permitir que diversos usuários possam estruturar suas discussões de forma intuitiva e avaliar a aceitabilidade de cada argumento automaticamente;
+\item Fazer uma avaliação dos modelos de argumentação relevantes. A avaliação será utilizada para obter as melhores práticas de cada modelo. Desta forma, possibilitará uma elicitação de requisitos consistente para a ferramenta que será construída.
+\end{enumerate}
 
 \subsection{Objetivos Específicos}
 
-Como objetivos específicos este trabalho visa:
-
 \begin{enumerate}
-\item Reescrever o código do \textit{background}\footnote{Sequência de passos ou processo que executa em paralelo e ``por trás'' da camada de visualização sem a intervenção do usuário} do Mezuro (modelo e controladores);
-\item Analisar a nova arquitetura e compará-la com a antiga;
-\item Fornecer documentação para o Mezuro, facilitando sua manutenção e evolução;
-\item Colaborar com a comunidade de software livre do Mezuro, seguindo os padrões para colaboração.
+\item Avaliar as ferramentas de discussão disponíveis na internet. O resultado desta avaliação permitirá a identificação de boas práticas de projeto e implementação, bem como a identificação de problemas que poderão ser evitados no desenvolvimento da nova ferramenta;
+\item Realizar a engenharia de requisitos da ferramenta a ser desenvolvida utilizando técnicas orientadas à meta;
+\item Gerenciar e executar o processo de desenvolvimento da ferramenta seguindo a metodologia ágil.
 \end{enumerate}
 
 \section{Organização do Trabalho}
 
-O primeiro passo para realização deste trabalho foi o contato com a equipe que mantem a plataforma Mezuro, que se deu através do professor Dr. Paulo Meirelles, um dos mantenedores. Como muitos projetos de software livre contam com desenvolvedores distantes geograficamente, com o Mezuro não foi diferente. Após o contato com o primeiro mantenedor, iniciou-se os pareamentos remotos, através de vídeo-conferências, para maior familiriadade com o código e funcionalidades fornecidas pela ferramenta.
+Este trabalho está organizado em seis capítulos. Neste capítulo de introdução situam-se: uma análise envolvendo o contexto do trabalho, o problema a ser resolvido, os objetivos e as justificativas.
 
-Após a apresentação geral de todo o código e funcionalidades do Mezuro, iniciou-se o treinamento na ferramenta utilizada no desenvolvimento do Mezuro, o framework Ruby on Rails. Essa fase aconteceu em paralelo com os pareamentos, onde começei a implementar a primeira funcionalidade como colaborador da plataforma Mezuro.
+No Capítulo 2 - \textit{Teoria da Argumentação} são apresentados os conceitos referentes a argumentação em diferentes contextos. Para isto, é feita uma análise conceitual da argumentação. A seguir, apresenta-se os modelos e frameworks relevantes para a prática da argumentação. Para finalizar, apresenta-se uma ontologia que descreve os elementos fundamentais de uma argumentação.
 
-Em paralelo, houve a escrita desta trabalho que está organizado em capítulos como a seguir. O Capítulo 2 apresenta os principais conceitos de softwares livre, e padrões de contribuições, com uma fundamentação teórica sobre evolução de software. O Capítulo 3 apresenta os principais, dos diversos conceitos, sobre arquitetura de software, assim como uma visão da arquitetura do Rails. Finalmente, o Capítulo 4 apresenta com mais detalhes a plataforma Mezuro, seu processo de desenvolvimento, fatores que motivaram a reescrita de seu código, assim como uma visão geral do estado atual do desenvolvimento.
+No Capítulo 3 - \textit{Padrões e Tecnologias} são apresentados as tecnologias e padrões utilizados para o desenvolvimento deste trabalho.
 
+No Capitulo 4 - \textit{Proposta} é apresentado a proposta do trabalho. Para isto, apresentá-se as descrições das tarefas que serão executadas bem como a metodologia de desenvolvimento utilizada no trabalho.
+
+No Capítulo 5 - \textit{Estado Atual} são apresentados os resultados obtidos na primeira etapa deste trabalho. Entre os resultados, destacam-se a elicitação de requisitos utilizando técnicas orientadas à meta, a arquitetura de software e a implementação desenvolvida até então. O cronograma bem como os próximos passos também são apresentados.
+
+No Capítulo 6 - \textit{Considerações Finais} são apresentadas as conclusões e contribuições obtidas ao término deste trabalho.
 % A introdução ficou boa.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
