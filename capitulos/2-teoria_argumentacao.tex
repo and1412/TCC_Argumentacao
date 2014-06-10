@@ -170,7 +170,7 @@ O IBIS framework tem como meta a conexão das questões chaves de um problema. C
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{elementos_modelo_IBIS}
-\caption{Elementos do Framework IBIS. Adaptado de \cite{ebadi_collaborative_2009}} 
+\caption{Elementos do Framework IBIS.}{Adaptado de \cite{ebadi_collaborative_2009}} 
 \label{elementos_modelo_ibis}
 \end{figure}
 
@@ -296,7 +296,7 @@ Semântica formal permitindo a adoção da abordagem em sistemas computacionais.
 
 \subsection{Framework ACE}
 
-O ACE \footnote{Acceptability Evaluation ou Avaliação da Aceitabilidade} \cite{jureta2009AMA} é um framework de argumentação baseado em proposições que possui origens na engenharia de requisitos. Este framework oferece maneiras de modelar e raciocinar acerca da validação relativa dos requisitos discutidos em uma reunião. A validação relativa pode ser vista como um consenso dos participantes de uma discussão a respeito de um artefato. O framework é composto de uma linguagem para representar as informações extraídas de uma discussão, uma condição de aceitabilidade para verificar a existência de consenso entre os participantes e procedimentos para checar a condição de aceitabilidade automaticamente.
+O ACE \footnote{Acceptability Evaluation ou Avaliação da Aceitabilidade} \cite{jureta2009AMA} é um framework de argumentação baseado em proposições que possui origem na engenharia de requisitos. Este framework oferece maneiras de modelar e raciocinar acerca da validação relativa dos requisitos discutidos em uma reunião. A validação relativa pode ser vista como um consenso dos participantes de uma discussão a respeito de um artefato. O framework é composto de uma linguagem para representar as informações extraídas de uma discussão, uma condição de aceitabilidade para verificar a existência de consenso entre os participantes e procedimentos para checar a condição de aceitabilidade automaticamente.
 
 Os modelos de argumentação, gerados com base na linguagem contida no ACE, são grafos direcionados com rótulos.  Os vértices são classificados com base em quatro rótulos: i, It, P e C. Os vértices com rótulo (i) representam vértices de informação que servem de entrada ou saída para inferências (It). Os vértices com o rótulo (I) representam a aplicação de inferências a fim de obter determinadas saídas. Os vértices com rótulo (C) representam regras de conflito envolvendo dois ou mais vértices em um grafo. Finalmente, os vértices com rótulo (P) representam regras de preferência envolvendo a predileção de dois ou mais vértices do grafo. As arestas do grafo possuem apenas um rótulo (To).
 
@@ -381,8 +381,42 @@ Provê algoritmos para a recuperação e avaliação dos argumentos de uma discu
 
 \section{Argumentação na Web}
 
-Diversas áreas de pesquisa tais como inteligência artificial, filosofia, linguística e engenharia de software estão propondo diferentes abordagens que compreendem técnicas de argumentação. O interesse na argumentação é evidente, porém as diferentes abordagens desenvolvidas consideram aspectos específicos do domínio de aplicação. Isto acaba dificultando a integração e unificação dos resultados de cada proposta em um modelo de argumentação geral e coerente \cite{bex_formal_2010}. Estas várias abordagens dificultam a integração dos dados gerados a partir das  ferramentas computacionais que auxiliam o processo de argumentação e geralmente não abrangem técnicas para lidar com a semântica da argumentação (RAHWAN; REED, 2009).  
+Diversas áreas de pesquisa tais como inteligência artificial, filosofia, linguística e engenharia de software estão propondo diferentes abordagens que compreendem técnicas de argumentação. O interesse na argumentação é evidente, porém as diferentes abordagens desenvolvidas consideram aspectos específicos do domínio de aplicação. Isto acaba dificultando a integração e unificação dos resultados de cada proposta em um modelo de argumentação geral e coerente \cite{bex_formal_2010}. Estas várias abordagens dificultam a integração dos dados gerados a partir das  ferramentas computacionais que auxiliam o processo de argumentação e geralmente não ofertam técnicas para lidar com a lógica da argumentação \cite{rahwan2011}.  
 
-	Para solucionar os problemas acima, uma linguagem de marcação chamada AIF (Argument Interchange Format) (RAHWAN; REED, 2009) foi elaborada. O AIF consiste de uma ontologia unificando conceitos utilizados na argumentação em vários contextos. Os principais objetivos desta linguagem são: facilitar a troca de informações entre ferramentas que suportam o processo de argumentação; simplificar o desenvolvimento de sistemas multiagentes, principalmente na racionalidade dos agentes inteligentes. 
+Para solucionar os problemas acima, uma linguagem de marcação chamada AIF\footnote{Argument Interchange Format ou Formato para a Troca de Argumentos} \cite{rahwan2011} foi elaborada. O AIF consiste de uma ontologia que unifica conceitos semelhantes que são utilizados na argumentação em vários contextos. Os principais objetivos do AIF são: facilitar a troca de informações entre ferramentas que suportam o processo de argumentação; simplificar o desenvolvimento de sistemas multiagentes, principalmente na racionalidade dos agentes inteligentes. 
 	
-	A ontologia presente no AIF pode ser dividida em dois segmentos:  ontologia superior e formal. A ontologia superior define uma linguagem em que um grafo de argumentos pode ser construído. A ontologia formal disponibiliza conceitos que uma argumentação pode incorporar dependendo de seu contexto. Apresenta-se na Figura 08 a visão geral dos conceitos e relações presentes no AIF. 
+O AIF pode ser dividida em duas ontologias:  superior e formal. A ontologia superior define uma linguagem contendo diversos elementos para representar uma discussão. A ontologia formal oferece uma série de padrões que auxiliam a análise racional dos argumentos de um discurso.  Os padrões podem variar dependendo do contexto que ocorre o diálogo. Apresenta-se na Figura \ref{elementos-ontologia-aif} a estrutura geral e os relacionamentos dos conceitos presentes no AIF. 
+
+\graphicspath{{figuras/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{aif_ontologia_2}
+\caption{Estrutura da Ontologia AIF.}{Adaptado de \cite{bex_formal_2010}} 
+\label{elementos-ontologia-aif}
+\end{figure}
+
+Com base na Figura \ref{elementos-ontologia-aif}, observa-se que a ontologia define quatro tipos de nó. Os nós \textit{I-NODE}\footnote{Information Node ou Nó de Informação} encapsulam as informações disponíveis na discussão. Estas informações podem possuir caráter dedutível: premissas ou conclusões, ou revogável: presunções ou exceções. Os nós de informação representam a base de conhecimento concebida como conseqüência de uma discussão. Os nós \textit{S-NODE}\footnote{Scheme Node ou Nó de Esquema} representam aplicações de esquemas, ou seja, padrões racionais. A partir deles, regras de inferência, preferência e conflito podem ser estabelecidas. Os esquemas de argumentação podem ser classificados. O esquema de inferência foi classificado em duas diretrizes diferentes: \textit{Dedutivo} e \textit{Revogável}. O esquema dedutivo compreende aspectos relacionados a lógica formal. Esta abordagem consiste no processo de gerar conclusões a partir de premissas válidas de forma monotônica. Já o esquema revogável considera a lógica não monotônica, ou seja, a adição de novas informações, confiáveis ou não, pode modificar o resultado de uma ou várias conclusões. 
+
+Apresenta-se na Figura \ref{aplicacao_aif} um exemplo de aplicação do AIF. O exemplo consiste de uma discussão envolvendo a venda de um notebook. Os nós de informação e de esquema são representados, respectivamente, pela cor azul e laranja. Os nós de esquema são gerados a partir de percepções lógicas baseadas nas informações presentes na discussão. As informações são apresentados a seguir:
+
+\begin{itemize}
+
+\item \textit{I1} João garante para José que o notebook está sem problemas.
+\item \textit{I2} O notebook está sem problemas.
+\item \textit{I3} O notebook está funcionando corretamente.
+\item \textit{I4} José ouviu falar que João não é confiável.
+\item \textit{I5} João afirma que é confiável.
+\item \textit{PA1} Por meio de uma pesquisa com seus amigos, José descobriu que João é confiável.  
+
+\end{itemize}
+
+\graphicspath{{figuras/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{aplicacao_aif}
+\caption{Aplicação da Ontologia AIF.} 
+\label{aplicacao_aif}
+\end{figure}
+
+O nó de informação \textit{I2} foi gerado através de uma regra de inferência \textit{RA1} revogável, as premissas que oferecem suporte para I2 possuem certas restrições. O conflito \textit{CA1}, gerado a partir do nó \textit{I4}, está atacando \textit{RA1}. A conclusão \textit{I2} é válida por conta da aplicação de uma regra de preferência \textit{PA1} que apoia o nó \textit{I5}, contrário ao nó \textit{I4}. Para finalizar, uma conclusão pode servir de insumo para uma nova regra de inferência. O nó \textit{I3} foi gerado por intermédio da regra de inferência dedutiva \textit{RA2}, que teve como insumo a conclusão \textit{I2}.
+  
